@@ -49,10 +49,11 @@ anakinSkywalker.children.push('Jar Jar')
 
 //13. Loop through the object and remove any property that starts with former
 for (var key in anakinSkywalker) {
-  var x = anakinSkywalker[key].split('_') 
-    if (anakinSkywalker[key] === 'former') {
-      delete anakinSkywalker[key];
-    }  
+  var newArr = key.split("_")
+  if (newArr[0] === "former") {
+    delete anakinSkywalker[key];
+  }
+
 }
 
 
